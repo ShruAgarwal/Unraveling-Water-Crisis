@@ -1,4 +1,5 @@
 # 🌏 Unraveling the Water Crisis
+> *Project developed during [Deepnote x Streamlit Data App Challenge 2025](https://deepnote.com/app/deepnote/Deepnote-x-Streamlit-challenge-5c932eff-a979-47bd-a5ec-dbd7bcaa5f05)*
 
 ## ✨ Overview
 
@@ -33,10 +34,11 @@ Dive deeper into the water crisis visually through **[this short video!](https:/
 - The AquaMind chatbot uses the **Groq's `llama-3.3-70b-versatile` Llama 3** language model API to answer user questions. It prioritizes information from the provided **PDF report [here!](https://pmc.ncbi.nlm.nih.gov/articles/PMC10300917/pdf/membranes-13-00612.pdf)** When needed, it supplements its knowledge with web search results from credible sources like WRI, FAO, and the Water Footprint Network, through *DuckDuckGo Search API*.
     - ⚠ **NOTE:** *Due to occasional API rate limits imposed by DuckDuckGo, web search functionality may be temporarily unavailable or return incomplete results. It is recommended to try your query again later if you encounter this issue.*
 
-### 🛠 Tech Stack Used
+
+## 🛠 Tech Stack Used
 - Streamlit
 - Pandas
-- Ploltly
+- Plotly
 - Langchain
 - Groq API
 - DuckDuckGo Search API
@@ -56,3 +58,16 @@ Building this app involved navigating several key challenges:
 -  **LLM optimization** was vital; I experimented with prompt engineering to enhance performance within budget constraints, while allowing users to provide their own API keys to avoid relying solely on the project’s resources.
 
 - Finally, I **prioritized ethical considerations** at every step, carefully vetting data sources to minimize misinformation and bias, and diligently avoided scope creep by focusing on core features.
+
+
+## 🚀 Further Steps
+
+1. **"What You Can Do?" Section:** To add a section with concrete actions that individuals and organizations can take to address the water crisis.
+
+2. **AquaMind Chatbot Structure Refinement:** Refactor the chatbot logic into a more formal AI Agent structure using [Agno](https://www.agno.com/) library for improved planning, tool selection for PDF and web search, and error handling.
+
+3. **Source Citations:** Implement automatic citation of sources (report page numbers or web URLs) within the chatbot's responses to enhance transparency and trust.
+
+4. **AI-Generated Glossary:** Leverage the chatbot to assist in generating a glossary of key terms related to water-crisis, textile production, and agriculture.
+
+5. **User Feedback Mechanism:** Add a simple feedback system (e.g., thumbs up/down) to gather user input on the accuracy and relevance of chatbot responses for future improvements.
